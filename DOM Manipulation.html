@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body>
+    <p id="org_Paragraph">This is original paragraph.</p>
+    <button onclick="changePara()">
+        Change paragraph
+    </button>
+    
+    <script>
+        function changePara(){
+            var originalParagraph = document.getElementById('org_Paragraph');
+            //alert(originalParagraph.innerHTML= "This is changed paragraph.");
+            originalParagraph.innerHTML= "This is changed paragraph.";
+        }
+    </script>
+</body>
+</html>
